@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+:root{
+    --orange: #ffa600;
+    --grey:#f3f3f3;
+    --white: #fff;
+    --base-color: var(--orange);
+    --poppins: 'Poppins', sans-serif;
+}
+
+body{
+    background: var(--base-color);
+    font-family: poppins;
+    height: 100%;
+
+}
+
+main{
+    margin-left: 28rem;
+    margin-top: 15rem;
+}
+
+main,
+main p span{
+    color: var(--white);
+}
+
+main > p{
+    font-size: 2rem;
+    align-items: center;
+    margin-left:  10.4rem;  
+    margin-bottom: 2rem;
+}
+
+main button{
+    color: var(--white);
+    background: var(--base-color);
+    border: solid 1px var(--white);
+    border-radius: 0.2rem;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+}
+
+#hour, #minutes, #seconds{
+    font-size: 2rem;
+}
