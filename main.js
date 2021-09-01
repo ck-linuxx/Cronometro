@@ -1,7 +1,7 @@
 window.onload = function (){
     var hour = 00
-    var minutes = 00
-    var seconds = 00
+    var minutes = 58
+    var seconds = 58
     var tens = 00
     var idHour = document.getElementById("hour")
     var idMinutes = document.getElementById("minutes")
@@ -50,6 +50,13 @@ window.onload = function (){
             minutes++
             idMinutes.innerHTML = "0" + minutes
         }
+
+        if(minutes == 59){
+            minutes = 00
+            hour++
+            idHour.innerHTML = "0" + hour
+        }
+
     }
 
 }
